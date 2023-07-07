@@ -374,3 +374,6 @@ form input[type="email"]{
   width: 30%;
   display: inline-block;
 }
+.greeting{
+  text-align: center;
+}
