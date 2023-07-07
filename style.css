@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300&family=Open+Sans:wght@300&display=swap');
+body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; ;
+}
+.header{
+  height: 100vh;
+}
+.container-navbar{
+  display: flex;
+  background-color: #e222b2;
+  padding-bottom: 10px;
+  color: rgb(7, 7, 7);
+  align-items: center;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.navbar ul{
+  display: flex;
+  text-align: center;
+  list-style: none;
+  align-items: center;
+}
+.navbar li{
+  padding: 10px;
+  margin-left: 40px;
+  transition: background-color 0.5s;
+  border-radius: 15px;
+}
+.navbar li a{
+  color: white;
+  text-decoration: none;
+}
+.navbar li:hover{
+  background-color: rgb(238, 157, 231);
+  border-radius: 10px;
+}
+
+.btn-menu-toggle{
+  display: none;
+}
+.sub-container{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.egg{
+  color: #FFCE33;
+  transition: font-size 0.5s;
+}
+.egg:hover{
+  font-size: 40px;
+}
+.egg-logo{
+  margin: 4px;
+  height: 40px;
+}
+.image{
+  margin-top: 5px;
+  height: 60px;
+  width: auto;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding-left: 20px;
+}
+
+.button{
+  background-color: #19222B;
+  border-style: none;
+  padding: 8px;
+  color: white;
+  border-radius: 2px;
+  margin: 5px;
+  transition: background-color 0.5s;
+}
+.button:hover{
+  background-color: rgb(224, 96, 96);
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+}
+/*Estilos calculadora*/
+.calculate{
+  align-items: center;
+  padding: 8px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-radius: 20px;
+  background-color: #d25ef5;
+  color: white;
+}
+.container-calc{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.button-calc{
+  background-color: #f6f6f6;
+  border-style: none;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.5s;
+}
+.button-calc:hover{
+  background-color: #cec8c8 ;
+}
+.input1{
+  margin-bottom: 20px;
+}
+.input2{
+  margin-bottom: 30px;
+}
+.res{
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+/****/
+/*Estilos formulario*/
+.container-form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+form{
+	width:450px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#d25ef5;
+  color: white;
+}
+
+form label{
+	width:80px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:280px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #f5efef;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#ac6161;
+} 
+
+form button[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+/**********/
+/*Estilos footer*/
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  background-color: #d25ef5 ;
+  color: aliceblue;
+}
+/*****/
+/*RESPONSIVE DESIGN*/
+
+@media (max-width:1185px){
+  .navbar li{
+    margin-left: 20px;
+  }
+  .footer{
+    height: 34px;
+  }
+}
+@media (max-width:450px){
+
+  form{
+    width: 200px;
+  }
+  form label{
+    width: 50px;
+    font-size: 12px;
+  }
+  form input[type="text"],
+form input[type="email"]{
+	width:100px;
+	padding:3px 10px;
+}
+  .calculate{
+    width: 50%;
+  }
+  .button-calc{
+    padding: 2px;
+    margin: 0px;
+  }
+  .sub-container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .egg-logo{
+    margin: 4px;
+    height: 20px;
+  }
+  .main h2{
+    font-size: 20px;
+  }
+  .navbar li{
+    padding: 5px;
+  }
+  .image{
+    height: 50px;
+    margin-top: 10px;
+  }
+}
+@media (max-width:395px){
+  .navbar{
+    display: none;
+  }
+  .btn-menu-toggle{
+    display: block;
+    align-items: center;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: #FFCE33;
+    border-style: none;
+    border-radius: 5px;
+    color: black;
+  }
+  .nav-links.nav-links-responsive{
+    position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      gap:70px;
+  }
+  .btn-menu-toggle:hover{
+    background-color: #f3bc07;
+  }
+  .sub-container{
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .main p{
+    font-size: 14px;
+  }
+  .egg-logo{
+    margin: 4px;
+    height: 20px;
+  }
+  .main h2{
+    font-size: 18px;
+  }
+  .navbar li{
+    padding: 0px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .image{
+    height: 40px;
+    margin-top: 8px;
+  }
+  .footer{
+    font-size: 15px;
+  }
+}
+@media(max-width:325px){
+  form{
+    width: 200px;
+  }
+  form label{
+    width: 80px;
+    font-size: 12px;
+  }
+  form input[type="text"],
+form input[type="email"]{
+	width:80px;
+	padding:3px 10px;
+}
+.calculate{
+  width: 50%;
+}
+.button-calc{
+  padding: 2px;
+  margin: 0px;
+  font-size: 10px;
+}
+.calculate input{
+  width: 100%;
+}
+  .sub-container{
+    font-size: 10px;
+  }
+  .main h2{
+    font-size: 15px;
+  }
+  .footer{
+    font-size: 12px;
+  }
+}
+.services {
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.service img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.service h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+}
+.service {
+  text-align: center;
+  margin: 20px;
+  width: 30%;
+  display: inline-block;
+}
